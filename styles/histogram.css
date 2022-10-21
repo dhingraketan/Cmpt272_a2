@@ -8,10 +8,15 @@
   grid-template-columns: 50% 50%;
 }
 
-.results{
+.results .stats{
   display: grid;
   grid-template-columns: 100%;
 }
-.histogram .stats{
+.histogram{
   display: block;
+}
+
+.stat-elems{
+  display: grid;
+  grid-template-columns: 200px 100px;
 }

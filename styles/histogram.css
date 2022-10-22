@@ -1,11 +1,11 @@
 .lower-bounds{
-  display:inline-block;
+  display:grid;
+  margin-top: 20px;
+  grid-template-columns: 300px 1fr;
 }
 
 .all-content{
-  display: grid;
-  margin-top: 20px;
-  grid-template-columns: 50% 50%;
+  margin-left: 20px;
 }
 
 .results .stats{
@@ -19,4 +19,12 @@
 .stat-elems{
   display: grid;
   grid-template-columns: 200px 100px;
+}
+
+.bars{
+  margin-top: 7px;
+  margin-bottom: 5px;
+  width: 30px;
+  height: 40px;
+  background-color: lightblue;
 }

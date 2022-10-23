@@ -9,121 +9,127 @@
   </head>
   <body>
 
-    <h1>Histogram Generator</h1>
-    <form method="post" enctype="multipart/form-data">
-      <input type="file" name="studentData" />
-    </form>
+    <h1 id="main-heading">
+      <span id="first-letter">Histogram</span> Generator
+    </h1>
+    <div class="file-upload">
+      <input type="file" id="real-file" hidden="hidden" />
+      <button type="button" id="custom-button">CHOOSE A FILE</button>
+      <span id="custom-text">No file chosen</span>
+    </div>
     <section class="all-content">
+
       <form class = "lower-bounds" method="post">
         <h2>Lower Bounds</h2>
         <h2>Histogram</h2>
 
         <p class="grade-labels">
-          <label>Max</label>
-          <input type="text" name="Max" />
+          <label class="cutOffs">Max</label>
+          <input type="text" id="max-value" name="Max" />
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div>
+          <p class="total-count"> Total Number of Students: </p>
+          <p class="total-count" id="total-stud-count">123</p>
         </div>
 
         <p class="grade-labels">
-          <label>A+</label>
-          <input type="text" name="A+" />    
+          <label class="cutOffs">A+</label>
+          <input type="text" id="a-plus-value" />    
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="a-plus-bar">
+          <p class="bar-value" id="a-plus-count">1</p>
         </div>
 
         <p class="grade-labels">
-          <label>A</label>
-          <input type="text" name="A" />
+          <label class="cutOffs">A</label>
+          <input type="text" id="a-value" />
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="a-bar">
+          <p class="bar-value" id="a-count">5</p>
         </div>
         
         <p class="grade-labels">
-          <label>A-</label>
-          <input type="text" name="A-" />
+          <label class="cutOffs">A-</label>
+          <input type="text" id="a-minus-value" />
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="a-minus-bar">
+          <p class="bar-value" id="a-minus-count">4</p>
         </div>
 
         <p class="grade-labels">
-          <label>B+</label>
-          <input type="text" name="B+" />  
+          <label class="cutOffs">B+</label>
+          <input type="text" id="b-plus-value" />  
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="b-plus-bar">
+          <p class="bar-value" id="b-plus-count">2</p>
         </div>
 
         <p class="grade-labels">
-          <label>B</label>
-          <input type="text" name="B" />
+          <label class="cutOffs">B</label>
+          <input type="text" id="b-value" />
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="b-bar">
+          <p class="bar-value" id="b-count">9</p>
         </div>
 
         <p class="grade-labels">
-          <label>B-</label>
-          <input type="text" name="B-" />
+          <label class="cutOffs">B-</label>
+          <input type="text" id="b-minus-value" />
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="b-minus-bar">
+          <p class="bar-value" id="b-minus-count">3</p>
         </div>
 
         <p class="grade-labels">
-          <label>C+</label>
-          <input type="text" name="C+" />
+          <label class="cutOffs">C+</label>
+          <input type="text" id="c-plus-value" />
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="c-plus-bar">
+          <p class="bar-value" id="c-plus-count">6</p>
         </div>
 
         <p class="grade-labels">
-          <label>C</label>
-          <input type="text" name="C" />
+          <label class="cutOffs">C</label>
+          <input type="text" id="c-value" />
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="c-bar">
+          <p class="bar-value" id="c-count">7</p>
         </div>        
 
         <p class="grade-labels">
-          <label>C-</label>
-          <input type="text" name="C-" />
+          <label class="cutOffs">C-</label>
+          <input type="text" id="c-minus-value" />
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="c-minus-bar">
+          <p class="bar-value" id="c-minus-count">8</p>
         </div>
 
         <p class="grade-labels">
-          <label>D</label>
-          <input type="text" name="D" />
+          <label class="cutOffs">D</label>
+          <input type="text" id="d-value" />
         </p>
 
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="d-bar">
+          <p class="bar-value" id="d-count">0</p>
         </div>
 
         <p class="grade-labels">
-          <label>F</label>
-          <input type="text" name="F" />
+          <label class="cutOffs">F</label>
+          <input type="text" id="f-value" />
         </p>
         
-        <div class="bars">
-          <p></p>
+        <div class="bars" id="f-bar">
+          <p class="bar-value" id="f-count">1</p>
         </div>
 
       </form>
@@ -133,29 +139,29 @@
         <div class="stats">
           <h2>Stats</h2>
           <div class="stat-elems">
-            <p>
+            <p class="stat-props">
               Highest
             </p>
-            <p>
-              Stud Info.
+            <p class="stat-values" id="heighest">
+              95
             </p>
-            <p>
+            <p class="stat-props">
               Lowest
             </p> 
-            <p>
-              Stud Info.
+            <p class="stat-values" id="lowest">
+              32
             </p> 
-            <p>
+            <p class="stat-props">
               Mean
             </p> 
-            <p>
-              score
+            <p class="stat-values" id="mean">
+              51
             </p> 
-            <p>
+            <p class="stat-props">
               Median
             </p> 
-            <p>
-              score
+            <p class="stat-values" id="median">
+              60
             </p>
           
           </div>

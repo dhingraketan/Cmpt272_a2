@@ -1,16 +1,78 @@
+body{
+  background-color: rgb(171,216,213);
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+#main-heading{
+  background-color: lightcoral;
+  margin: 0px;
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 40px;
+  text-size-adjust: 90%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(151, 150, 150);
+}
+
+#first-letter{
+color: white;
+}
+
+.file-upload{
+  margin-left: 50px;
+  background-color: rgb(151, 150, 150);
+  width: fit-content;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+
 .lower-bounds{
+  border-radius: 20px;
   display:grid;
+  background-color: rgb(151, 150, 150);
   margin-top: 20px;
-  grid-template-columns: 300px 1fr;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  grid-template-columns: 250px 500px;
+  row-gap: 5px;
 }
 
 .all-content{
-  margin-left: 20px;
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 50px;
 }
 
-.results .stats{
+h2{
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.stats{
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 800px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-left: 50px;
+  border-radius: 20px;
+  background-color: rgb(151, 150, 150);
 }
 .histogram{
   display: block;
@@ -19,12 +81,136 @@
 .stat-elems{
   display: grid;
   grid-template-columns: 200px 100px;
+  margin-bottom: 10px;
+}
+
+.stat-values, .stat-props{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  min-width: 80px;
+  color: lightcoral;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.stat-values{
+  color: white;
+}
+
+.total-count{
+  display: inline;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: bold;
+
 }
 
 .bars{
-  margin-top: 7px;
-  margin-bottom: 5px;
-  width: 30px;
-  height: 40px;
-  background-color: lightblue;
+  display: inline;
+  width: 20px;
+  height: 27px;
+  background-color: lightcoral;
+  
+}
+
+.bar-value{
+  display:inline;
+  color: white;
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.grade-labels{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.cutOffs{
+  display: inline-block;
+  min-width: 80px;
+  color: lightcoral;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+input[type="text"]{
+  width: 50px;
+  border-width: 2px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightcoral;
+  color: lightcoral;
+  font-weight: bold;
+}
+
+input[type="text"]:focus{
+  border: 3px solid lightcoral;
+
+}
+
+#a-plus-bar{
+  width: 360px;
+}
+
+#a-bar{
+  width: 100px;
+}
+
+#a-minus-bar{
+  width: 80px;
+}
+
+#b-plus-bar{
+  width: 40px;
+}
+
+#b-bar{
+  width: 240px;
+}
+
+#b-minus-bar{
+  width: 60px;
+}
+
+#c-plus-bar{
+  width: 120px;
+}
+
+#c-bar{
+  width: 140px;
+}
+
+#c-minus-bar{
+  width: 160px;
+}
+
+#d-bar{
+  width: 60px;
+}
+
+#f-bar{
+  width: 80px;
+}
+
+
+#custom-button {
+  padding: 10px;
+  color: white;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color: rgb(171,216,213);
+}
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: white
 }

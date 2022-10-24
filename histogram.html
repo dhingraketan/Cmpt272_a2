@@ -7,15 +7,13 @@
     <script type="text/javascript" src="calculate.js" defer></script>
     <title>Histogram Generator</title>
   </head>
-  <body>
+  <body onload="init()">
 
     <h1 id="main-heading">
       <span id="first-letter">Histogram</span> Generator
     </h1>
     <div class="file-upload">
-      <input type="file" id="real-file" hidden="hidden" />
-      <button type="button" id="custom-button">CHOOSE A FILE</button>
-      <span id="custom-text">No file chosen</span>
+      <input id="fileInput" type="file" name="file" />
     </div>
     <section class="all-content">
 
@@ -25,12 +23,12 @@
 
         <p class="grade-labels">
           <label class="cutOffs">Max</label>
-          <input type="text" id="max-value" name="Max" />
+          <input type="text" id="max-value" name="Max"/>
         </p>
 
         <div>
           <p class="total-count"> Total Number of Students: </p>
-          <p class="total-count" id="total-stud-count">123</p>
+          <p class="total-count" id="total-stud-count">-</p>
         </div>
 
         <p class="grade-labels">

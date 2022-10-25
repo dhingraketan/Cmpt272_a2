@@ -80,7 +80,7 @@ h2{
 
 .stat-elems{
   display: grid;
-  grid-template-columns: 200px 100px;
+  grid-template-columns: 200px 200px;
   margin-bottom: 10px;
 }
 
@@ -152,47 +152,47 @@ input[type="text"]:focus{
 }
 
 #a-plus-bar{
-  width: 20px;
+  width: 0px;
 }
 
 #a-bar{
-  width: 100px;
+  width: 0px;
 }
 
 #a-minus-bar{
-  width: 80px;
+  width: 0px;
 }
 
 #b-plus-bar{
-  width: 40px;
+  width: 0px;
 }
 
 #b-bar{
-  width: 240px;
+  width: 0px;
 }
 
 #b-minus-bar{
-  width: 60px;
+  width: 0px;
 }
 
 #c-plus-bar{
-  width: 120px;
+  width: 0px;
 }
 
 #c-bar{
-  width: 140px;
+  width: 0px;
 }
 
 #c-minus-bar{
-  width: 160px;
+  width: 0px;
 }
 
 #d-bar{
-  width: 60px;
+  width: 0px;
 }
 
 #f-bar{
-  width: 80px;
+  width: 0px;
 }
 
 
